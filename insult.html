@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html>
+<head>
+	</head>
+	<body>
+		<form>
+			<p>Do your worse!</p>
+			<button type="submit">Just click allready</button>
+		</form>
+		<p id="insultarea"></p>
+		<script>
+var bodyPart = ["elbow","eye lash","spleen","earlobe";
+var badAdjective = ["feels", "smells","sounds"];
+var badNoun = ["elderberries","cat barf","dead fish"]
+
+var part = bodyPart[Math.floor(Math.random()*bodyPart.length)];
+var adjective = badAdjective[Math.floor(Math.random()*badAdjective.length)];
+var noun = badNoun[Math.floor(Math.random()*badNoun.length)];
+
+var insult = "Your " + part + " " + adjective + " like " + noun + ".";
+
+var block = document.createTextNode(insult);
+document.getElementById("insultarea").appendChild(block);
+</script>
+</body>
+<html>
